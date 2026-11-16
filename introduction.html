@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fbf4eb">
+  <meta name="description" content="杭州红迹·杭州市思政课实践地图。循着手绘地图，走近杭州30处观察点，读懂地方历史与实践背后的马克思主义基本原理。">
+  <title>主题介绍 · 杭州红迹</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="site-config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body class="introduction-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="杭州红迹首页"><span class="brand-seal" aria-hidden="true">迹</span><span class="brand-name">杭州红迹<span>杭州市思政课实践地图</span></span></a>
+    <nav class="site-nav" aria-label="主导航"><a class="nav-link" href="index.html">返回点位首页 <span aria-hidden="true">↗</span></a><button id="open-map">手绘地图 <span aria-hidden="true">↗</span></button><button id="open-share">网站二维码</button></nav>
+  </header>
+
+  <main class="introduction-main">
+    <section class="introduction-lead" aria-labelledby="introduction-title">
+      <div><p class="section-eyebrow">杭州红迹 · 主题介绍</p><h1 id="introduction-title">在杭州，<br>读懂历史与实践</h1></div>
+      <div class="lead-copy"><p>杭州是浙江省会，山水与城相依，钱塘江、西湖、千岛湖串起丰富的地域风貌。运河商贸与江南文脉绵延，红色足迹见证人民奋斗。从水电建设到科技创新，从乡村振兴到公共文化，杭州的发展写在劳动与实践之中。</p><a class="text-link" href="index.html">浏览地图点位 <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <nav class="theme-nav" aria-label="主题导航"><a href="#theme-history">革命记忆</a><a href="#theme-labor">劳动与生活</a><a href="#theme-innovation">创新与发展</a><a href="#theme-ecology">山水与乡村</a></nav>
+    <div id="theme-sections"></div>
+  </main>
+  <footer><div class="footer-inner"><a class="footer-brand" href="index.html">杭州红迹</a><div class="footer-actions"><a href="index.html">返回点位首页 ↗</a><button id="open-map-footer">查看手绘地图 ↗</button></div></div></footer>
+  <dialog id="point-dialog" class="point-dialog" aria-labelledby="point-title"><button class="close-button" data-close aria-label="关闭详情">×</button><div id="point-content"></div></dialog>
+  <dialog id="map-dialog" class="map-dialog" aria-labelledby="map-title"><div class="map-toolbar"><h2 id="map-title">杭州红迹 · 手绘地图</h2><div><a href="杭州红迹-手绘地图.png" download>下载原图 ↓</a><button data-close aria-label="关闭地图">×</button></div></div><div class="map-scroll"><img src="map-detail.webp" alt="杭州红迹手绘地图，完整呈现13个区县市和30处点位" width="5000" height="3500"></div><p class="map-hint">双击地图切换放大，可滚动查看细节。</p></dialog>
+  <dialog id="share-dialog" class="share-dialog" aria-labelledby="share-title"><button class="close-button" data-close aria-label="关闭二维码">×</button><span class="dialog-kicker">杭州红迹 · 数字导览</span><h2 id="share-title">扫码访问配套网站</h2><img src="site-qr.png" alt="杭州红迹介绍网站访问二维码" width="260" height="260"><a id="site-url" href="#"></a><a class="download-qr" href="site-qr.png" download="杭州红迹-访问二维码.png">保存二维码 ↓</a></dialog>
+</body>
+</html>
